@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>pl.com.abstractcompany</groupId>
-	<artifactId>powp-project</artifactId>
+	<artifactId>powpproject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>powp-project</name>
+	<name>powpproject</name>
 	<description>HR management system demo</description>
 
 	<properties>
@@ -48,11 +48,11 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger2</artifactId>
-			<version>2.9.2</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>io.springfox</groupId>-->
+			<!--<artifactId>springfox-swagger2</artifactId>-->
+			<!--<version>2.9.2</version>-->
+		<!--</dependency>-->
 	</dependencies>
 
 	<build>
