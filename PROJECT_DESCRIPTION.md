@@ -6,10 +6,11 @@ Subject project of 'Programowanie Obiektowe - Wzorce Projektowe'
   * Emulate different positions in some company.
  
  ### Required Designing Patterns:
-  - [ ] Command Pattern ([description](https://refactoring.guru/design-patterns/command))
+  - [ ] Adapter Pattern ([description](https://refactoring.guru/design-patterns/adapter)
   - [ ] Abstract Factory Pattern ([description](https://refactoring.guru/design-patterns/abstract-factory))
-  - [ ] Proxy Pattern ([description](https://refactoring.guru/design-patterns/proxy))
-  - [ ] Strategy Pattern ([description](https://refactoring.guru/design-patterns/strategy))
+  - [ ] Builder Pattern ([description](https://refactoring.guru/design-patterns/builder))
+  - [ ] Decorator Pattern ([description](https://refactoring.guru/design-patterns/decorator))
+  - [x] Dependency Injection ([description](https://en.wikipedia.org/wiki/Dependency_injection))
 
 <br><br>
 ***
