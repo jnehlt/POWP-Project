@@ -21,4 +21,9 @@ public class ProfilesController {
     public ResponseEntity<List<ProfileDto>> getAllProfilesWithSalaries(){
         return new ResponseEntity<>(profilesService.getAllProfilesWithSalaries(), HttpStatus.OK);
     }
+
+    @GetMapping("/allProfilesWithSalariesInEur")
+    public ResponseEntity<ProfileDto> getAllProfilesWithSalariesInEur(){
+        return new ResponseEntity<>(HttpStatus.OK); //TODO proper endpoint logic
+    }
 }
