@@ -10,6 +10,7 @@ Subject project of 'Programowanie Obiektowe - Wzorce Projektowe'
   -- json to xml
   - [ ] Abstract Factory Pattern ([description](https://refactoring.guru/design-patterns/abstract-factory))
   - [ ] Builder Pattern ([description](https://refactoring.guru/design-patterns/builder))
+  -- getting employee salary and salary
   - [ ] Decorator Pattern ([description](https://refactoring.guru/design-patterns/decorator))
   -- return salary profile
   - [x] Dependency Injection ([description](https://en.wikipedia.org/wiki/Dependency_injection))
