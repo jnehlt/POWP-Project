@@ -2,45 +2,62 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	<groupId>pl.com.abstractcompany</groupId>
+	<artifactId>powpproject</artifactId>
+	<version>${project.version}</version>
+	<name>powpproject</name>
+	<description>HR management system demo</description>
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.2.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>pl.com.abstractcompany</groupId>
-	<artifactId>powpproject</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>powpproject</name>
-	<description>HR management system demo</description>
 
 	<properties>
 		<java.version>11</java.version>
+		<project.encoding>UTF-8</project.encoding>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+		<project.build.sourceEncoding>${project.encoding}</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>${project.encoding}</project.reporting.outputEncoding>
+
+		<project.major>0</project.major>
+		<project.minor>0</project.minor>
+		<project.bugfix>1-SNAPSHOT</project.bugfix>
+		<project.version>${project.major}.${project.minor}.${project.bugfix}</project.version>
+
+		<dependency.spring-boot-starter-data-rest.version>2.2.2.RELEASE</dependency.spring-boot-starter-data-rest.version>
+		<dependency.spring-boot-starter-data-jpa.version>2.2.2.RELEASE</dependency.spring-boot-starter-data-jpa.version>
+		<dependency.spring-boot-starter-test.version>2.2.2.RELEASE</dependency.spring-boot-starter-test.version>
+		<dependency.spring-boot-maven-plugin.version>2.2.2.RELEASE</dependency.spring-boot-maven-plugin.version>
+		<dependency.h2.version>1.4.200</dependency.h2.version>
+		<dependency.lombok.version>1.18.10</dependency.lombok.version>
+		<dependency.json.version>20190722</dependency.json.version>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<version>${dependency.spring-boot-starter-data-jpa.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-rest</artifactId>
+			<version>${dependency.spring-boot-starter-data-rest.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-maven-plugin</artifactId>
+			<version>${dependency.spring-boot-maven-plugin.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+			<version>${dependency.spring-boot-starter-test.version}</version>
 			<exclusions>
 				<exclusion>
 					<groupId>org.junit.vintage</groupId>
@@ -48,11 +65,23 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<!--<dependency>-->
-			<!--<groupId>io.springfox</groupId>-->
-			<!--<artifactId>springfox-swagger2</artifactId>-->
-			<!--<version>2.9.2</version>-->
-		<!--</dependency>-->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+			<version>${dependency.h2.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+			<version>${dependency.lombok.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>${dependency.json.version}</version>
+		</dependency>
 	</dependencies>
 
 	<build>
