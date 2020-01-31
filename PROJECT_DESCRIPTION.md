@@ -6,12 +6,12 @@ Subject project of 'Programowanie Obiektowe - Wzorce Projektowe'
   * Emulate different positions in some company.
  
  ### Required Designing Patterns:
-  - [ ] Adapter Pattern ([description](https://refactoring.guru/design-patterns/adapter)) <br>
+  - [x] Adapter Pattern ([description](https://refactoring.guru/design-patterns/adapter)) <br>
   --- json to xml
-  - [ ] Abstract Factory Pattern ([description](https://refactoring.guru/design-patterns/abstract-factory))
-  - [ ] Builder Pattern ([description](https://refactoring.guru/design-patterns/builder)) <br>
+  - [x] Abstract Factory Pattern ([description](https://refactoring.guru/design-patterns/abstract-factory))
+  - [x] Builder Pattern ([description](https://refactoring.guru/design-patterns/builder)) <br>
   --- getting employee position and salary
-  - [ ] Decorator Pattern ([description](https://refactoring.guru/design-patterns/decorator)) <br>
+  - [x] Decorator Pattern ([description](https://refactoring.guru/design-patterns/decorator)) <br>
   --- return salary profile
   - [x] Dependency Injection ([description](https://en.wikipedia.org/wiki/Dependency_injection)) <br>
   --- spring
